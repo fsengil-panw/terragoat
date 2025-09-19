@@ -129,7 +129,7 @@ resource azurerm_network_watcher_flow_log "flow_log" {
   resource_group_name       = azurerm_resource_group.example.name
   storage_account_id        = azurerm_storage_account.example.id
   retention_policy {
-    enabled = false
+    enabled = true
     days    = 10
   }
   tags = {
